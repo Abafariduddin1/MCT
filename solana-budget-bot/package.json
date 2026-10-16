@@ -1,0 +1,38 @@
+{
+  "name": "solana-budget-bot",
+  "version": "4.0.2",
+  "private": true,
+  "type": "module",
+  "description": "Solana spot portfolio engine with hybrid strategy and filtered wallet copy trading",
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/cli.mjs run",
+    "doctor": "node --env-file-if-exists=.env src/cli.mjs doctor",
+    "wallet": "node src/cli.mjs wallet",
+    "status": "node --env-file-if-exists=.env src/cli.mjs status",
+    "pause": "node --env-file-if-exists=.env src/cli.mjs pause",
+    "resume": "node --env-file-if-exists=.env src/cli.mjs resume",
+    "flatten": "node --env-file-if-exists=.env src/cli.mjs flatten",
+    "export": "node --env-file-if-exists=.env src/cli.mjs export",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "diagnose": "node --env-file-if-exists=.env src/cli.mjs diagnose",
+    "leader-check": "node --env-file-if-exists=.env src/cli.mjs leader-check",
+    "preflight": "node --env-file-if-exists=.env src/cli.mjs preflight",
+    "allocate": "node --env-file-if-exists=.env src/cli.mjs allocate",
+    "resume-copy": "node --env-file-if-exists=.env src/cli.mjs resume-copy",
+    "demo": "node scripts/demo.mjs",
+    "feed-check": "node --env-file-if-exists=.env src/cli.mjs feed-check",
+    "latency": "node --env-file-if-exists=.env src/cli.mjs latency",
+    "benchmark": "node scripts/benchmark.mjs"
+  },
+  "dependencies": {
+    "@solana/web3.js": "1.99.0",
+    "bs58": "6.0.0"
+  },
+  "overrides": {
+    "jayson": "5.0.0"
+  }
+}
