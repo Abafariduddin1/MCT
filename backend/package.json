@@ -1,0 +1,37 @@
+{
+  "name": "fomo-bot-backend",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node scripts/test-backend.mjs && node scripts/test-core.mjs",
+    "doctor": "node --env-file-if-exists=.env dist/src/cli.js doctor",
+    "feed": "node --env-file-if-exists=.env dist/src/cli.js feed",
+    "vault:create": "node --env-file-if-exists=.env dist/src/cli.js vault-create",
+    "start": "node --env-file-if-exists=.env dist/src/cli.js serve",
+    "token:create": "node --env-file-if-exists=.env dist/src/cli.js token-create",
+    "controller": "node --env-file-if-exists=.env scripts/controller-client.mjs",
+    "lock:recover": "node --env-file-if-exists=.env dist/src/cli.js lock-recover",
+    "fixtures:swift": "npm run build && node scripts/export-swift-fixtures.mjs",
+    "verify:swift": "node scripts/verify-swift-commands.mjs ../ios/Tests/FomoBotCoreTests/Fixtures/swift-commands.json",
+    "verify:ios": "npm run build && node scripts/verify-ios.mjs"
+  },
+  "dependencies": {
+    "@solana/web3.js": "1.99.0",
+    "bs58": "6.0.0",
+    "ws": "8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/ws": "8.18.2",
+    "typescript": "7.0.2"
+  },
+  "overrides": {
+    "jayson": "5.0.0"
+  }
+}
