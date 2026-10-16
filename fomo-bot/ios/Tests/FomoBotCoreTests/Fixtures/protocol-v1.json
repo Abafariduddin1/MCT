@@ -1,0 +1,453 @@
+{
+  "description": "Synthetic paper fixture from the actual local server. Not investment or market-performance data.",
+  "frames": {
+    "initial": {
+      "v": 1,
+      "type": "PORTFOLIO_UPDATE",
+      "seq": 1,
+      "at": 1792184633164,
+      "ledgerSeq": 1,
+      "data": {
+        "mode": "paper",
+        "base": "SOL",
+        "wallet": "paper",
+        "seq": 1,
+        "reportingDay": "2026-10-16",
+        "timezone": "Europe/Dublin",
+        "cashLamports": "2000000000",
+        "equityLamports": "2000000000",
+        "equityUsd": 200,
+        "equityEur": null,
+        "realizedTradingLamports": "0",
+        "capitalChangeLamports": "0",
+        "referenceOnlyChangeUsd": 0,
+        "maxAffordableBuyLamports": {
+          "normal": "76866070",
+          "copy": "0"
+        },
+        "reference": {
+          "solUsd": 100,
+          "usdcUsd": 1,
+          "solUsdc": 100,
+          "slot": 1000,
+          "at": 1792184633125
+        },
+        "fx": null,
+        "feesLamports": "0",
+        "rentLamports": "0",
+        "reservedLamports": "0",
+        "unreservedCashLamports": "2000000000",
+        "allocations": {
+          "normal": {
+            "pct": 50,
+            "cashLamports": "1000000000",
+            "dayStartLamports": "1000000000",
+            "highWaterLamports": "1000000000",
+            "entries": 0,
+            "halt": null
+          },
+          "copy": {
+            "pct": 30,
+            "cashLamports": "600000000",
+            "dayStartLamports": "600000000",
+            "highWaterLamports": "600000000",
+            "entries": 0,
+            "halt": null
+          },
+          "reserve": {
+            "pct": 20,
+            "cashLamports": "400000000",
+            "dayStartLamports": "400000000",
+            "highWaterLamports": "400000000",
+            "entries": 0,
+            "halt": null
+          }
+        },
+        "settings": {
+          "autoPilot": false,
+          "normalEnabled": true,
+          "copyEnabled": true,
+          "preset": "Safe",
+          "orderLamports": "50000000",
+          "panic": false,
+          "paused": false
+        },
+        "halt": null,
+        "positions": [],
+        "pending": [],
+        "recentOrders": [],
+        "recentCommands": [],
+        "copy": {
+          "leader": "5Z6Ay5NEcbg3xhopc522sBCRXQujkTiuDRnHGfQdcnSf",
+          "blocked": null,
+          "lastPollAt": null,
+          "lastSignalAt": null,
+          "streamReady": false,
+          "estimatedHistoryCredits": 0
+        },
+        "health": {
+          "lastTick": null,
+          "lastError": null,
+          "lastObservation": null,
+          "monitorMs": 500
+        }
+      }
+    },
+    "feed": {
+      "v": 1,
+      "type": "FEED_UPDATE",
+      "seq": 2,
+      "at": 1792184633164,
+      "ledgerSeq": 1,
+      "data": {
+        "tokens": [
+          {
+            "mint": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+            "name": "PROTOCOL FIXTURE",
+            "symbol": "TEST",
+            "imageUri": null,
+            "mcapUsd": null,
+            "fdvUsd": null,
+            "change5mPct": null,
+            "liquidityUsd": null,
+            "volume5mUsd": null,
+            "createdAt": 1792184633146,
+            "observedAt": 1792184633146,
+            "source": "pumpportal",
+            "estimated": true,
+            "bondingPct": null,
+            "migrated": false,
+            "isSafe": false,
+            "riskStatus": "unknown",
+            "riskReason": "Market audit data is stale or missing",
+            "sparkline": [],
+            "metadataAt": null
+          }
+        ]
+      }
+    },
+    "position": {
+      "v": 1,
+      "type": "PORTFOLIO_UPDATE",
+      "seq": 4,
+      "at": 1792184633194,
+      "ledgerSeq": 2,
+      "data": {
+        "mode": "paper",
+        "base": "SOL",
+        "wallet": "paper",
+        "seq": 2,
+        "reportingDay": "2026-10-16",
+        "timezone": "Europe/Dublin",
+        "cashLamports": "1949943000",
+        "equityLamports": null,
+        "equityUsd": null,
+        "equityEur": null,
+        "realizedTradingLamports": "0",
+        "capitalChangeLamports": null,
+        "referenceOnlyChangeUsd": 0,
+        "maxAffordableBuyLamports": {
+          "normal": "0",
+          "copy": "0"
+        },
+        "reference": {
+          "solUsd": 100,
+          "usdcUsd": 1,
+          "solUsdc": 100,
+          "slot": 1000,
+          "at": 1792184633171
+        },
+        "fx": null,
+        "feesLamports": "56000",
+        "rentLamports": "1000",
+        "reservedLamports": "0",
+        "unreservedCashLamports": "1949943000",
+        "allocations": {
+          "normal": {
+            "pct": 50,
+            "cashLamports": "949943000",
+            "dayStartLamports": "1000000000",
+            "highWaterLamports": "1000000000",
+            "entries": 1,
+            "halt": null
+          },
+          "copy": {
+            "pct": 30,
+            "cashLamports": "600000000",
+            "dayStartLamports": "600000000",
+            "highWaterLamports": "600000000",
+            "entries": 0,
+            "halt": null
+          },
+          "reserve": {
+            "pct": 20,
+            "cashLamports": "400000000",
+            "dayStartLamports": "400000000",
+            "highWaterLamports": "400000000",
+            "entries": 0,
+            "halt": null
+          }
+        },
+        "settings": {
+          "autoPilot": false,
+          "normalEnabled": true,
+          "copyEnabled": true,
+          "preset": "Safe",
+          "orderLamports": "50000000",
+          "panic": false,
+          "paused": false
+        },
+        "halt": null,
+        "positions": [
+          {
+            "id": "945816a8-eac5-42e2-aade-54daffaf211b",
+            "mint": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+            "symbol": "TEST",
+            "decimals": 6,
+            "bucket": "normal",
+            "strategy": "manual",
+            "quantityRaw": "4985000",
+            "costLamports": "50057000",
+            "openedAt": 1792184633182,
+            "entrySignature": null,
+            "markLamports": null,
+            "markAt": null,
+            "peakLamports": "0",
+            "quoteFailures": 0,
+            "protection": {
+              "stop": 8,
+              "take": 16,
+              "trailStart": 10,
+              "trail": 6,
+              "holdMs": 3600000,
+              "partialBps": 10000
+            },
+            "partialTaken": false,
+            "queuedSellRaw": "0",
+            "exitReason": null,
+            "entryReference": {
+              "solUsd": 100,
+              "usdcUsd": 1,
+              "solUsdc": 100,
+              "slot": 1000,
+              "at": 1792184633171
+            },
+            "entryMcapUsd": 1000000,
+            "entryFx": null,
+            "markStale": true,
+            "estimatedPnlLamports": null,
+            "pnlPercent": null
+          }
+        ],
+        "pending": [],
+        "recentOrders": [
+          {
+            "id": "945816a8-eac5-42e2-aade-54daffaf211b",
+            "commandId": "buy_command_00000001",
+            "side": "buy",
+            "mint": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+            "symbol": "TEST",
+            "decimals": 6,
+            "bucket": "normal",
+            "amountRaw": "50000000",
+            "stage": "finalized",
+            "createdAt": 1792184633178,
+            "updatedAt": 1792184633182,
+            "reason": null,
+            "strategy": "manual",
+            "signal": {
+              "strategy": "manual",
+              "bucket": "normal",
+              "at": 1792184633171,
+              "expiresAt": 1792184663171,
+              "maxUnitUsdc": 1.05,
+              "sourceSignature": null
+            },
+            "protection": {
+              "stop": 8,
+              "take": 16,
+              "trailStart": 10,
+              "trail": 6,
+              "holdMs": 3600000,
+              "partialBps": 10000
+            },
+            "partialProfit": false,
+            "reserveLamports": "50057000",
+            "reference": {
+              "solUsd": 100,
+              "usdcUsd": 1,
+              "solUsdc": 100,
+              "slot": 1000,
+              "at": 1792184633171
+            },
+            "entryMcapUsd": 1000000,
+            "fx": null,
+            "signature": null,
+            "nativeAudit": null,
+            "lastValidBlockHeight": null,
+            "applied": true,
+            "receipt": {
+              "kind": "success",
+              "base": "SOL",
+              "baseDelta": "-50000000",
+              "tokenDelta": "4985000",
+              "nativeSpent": 50057000,
+              "feeLamports": 56000,
+              "tipLamports": 0,
+              "rentDeltaLamports": 1000,
+              "confirmation": "finalized"
+            },
+            "preparationMs": null,
+            "transportMs": null,
+            "fillMs": 4
+          }
+        ],
+        "recentCommands": [
+          {
+            "id": "buy_command_00000001",
+            "hash": "9ac28637f752b9a5fa0dd60845d0078e49c66532ccdce8b279b6513234eba186",
+            "type": "QUICK_TRADE",
+            "at": 1792184633169,
+            "stage": "finalized",
+            "reason": null,
+            "orderId": "945816a8-eac5-42e2-aade-54daffaf211b"
+          }
+        ],
+        "copy": {
+          "leader": "5Z6Ay5NEcbg3xhopc522sBCRXQujkTiuDRnHGfQdcnSf",
+          "blocked": null,
+          "lastPollAt": null,
+          "lastSignalAt": null,
+          "streamReady": false,
+          "estimatedHistoryCredits": 0
+        },
+        "health": {
+          "lastTick": null,
+          "lastError": null,
+          "lastObservation": null,
+          "monitorMs": 500
+        }
+      }
+    },
+    "ack": {
+      "v": 1,
+      "type": "COMMAND_ACK",
+      "seq": 3,
+      "at": 1792184633172,
+      "ledgerSeq": 1,
+      "data": {
+        "id": "buy_command_00000001",
+        "hash": "9ac28637f752b9a5fa0dd60845d0078e49c66532ccdce8b279b6513234eba186",
+        "type": "QUICK_TRADE",
+        "at": 1792184633169,
+        "stage": "received",
+        "reason": null,
+        "orderId": null
+      }
+    },
+    "chart": {
+      "v": 1,
+      "type": "CHART_HISTORY",
+      "seq": 6,
+      "at": 1792184633204,
+      "ledgerSeq": 2,
+      "data": {
+        "mint": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+        "points": [],
+        "safety": null
+      }
+    },
+    "performance": {
+      "v": 1,
+      "type": "STRATEGY_REPORT",
+      "seq": 7,
+      "at": 1792184633222,
+      "ledgerSeq": 3,
+      "data": {
+        "mode": "paper",
+        "base": "SOL",
+        "at": 1792184633222,
+        "source": "recorded receipts",
+        "containsUnfinalizedEffects": false,
+        "realizedTradingLamports": "-412550",
+        "note": "Observed results after costs. Partial sales count toward realized PnL, but a position counts as a closed trade once. Open holdings and small samples do not establish an edge.",
+        "strategies": [
+          {
+            "strategy": "manual",
+            "bucket": "normal",
+            "entries": 1,
+            "closedTrades": 1,
+            "wins": 0,
+            "losses": 1,
+            "flat": 0,
+            "failedTransactions": 0,
+            "realizedLamports": "-412550",
+            "feesLamports": "112000",
+            "rentLamports": "1000",
+            "entryCostLamports": "50057000",
+            "winRatePct": 0,
+            "profitFactor": 0,
+            "openPositions": 0
+          }
+        ]
+      }
+    },
+    "alert": {
+      "v": 1,
+      "type": "TRADE_ALERT",
+      "seq": 10,
+      "at": 1792184634173,
+      "ledgerSeq": 3,
+      "data": {
+        "seq": 2,
+        "at": 1792184633182,
+        "type": "TRADE_FILLED",
+        "data": {
+          "orderId": "945816a8-eac5-42e2-aade-54daffaf211b",
+          "mint": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "side": "buy",
+          "mode": "paper",
+          "signature": null,
+          "confirmation": "finalized",
+          "fillMs": 4,
+          "receipt": {
+            "kind": "success",
+            "base": "SOL",
+            "baseDelta": "-50000000",
+            "tokenDelta": "4985000",
+            "nativeSpent": 50057000,
+            "feeLamports": 56000,
+            "tipLamports": 0,
+            "rentDeltaLamports": 1000,
+            "confirmation": "finalized"
+          },
+          "reference": {
+            "solUsd": 100,
+            "usdcUsd": 1,
+            "solUsdc": 100,
+            "slot": 1000,
+            "at": 1792184633171
+          },
+          "fx": null
+        },
+        "mode": "paper"
+      }
+    },
+    "completed": {
+      "v": 1,
+      "type": "COMMAND_ACK",
+      "seq": 12,
+      "at": 1792184634185,
+      "ledgerSeq": 3,
+      "data": {
+        "id": "buy_command_00000001",
+        "hash": "9ac28637f752b9a5fa0dd60845d0078e49c66532ccdce8b279b6513234eba186",
+        "type": "QUICK_TRADE",
+        "at": 1792184633169,
+        "stage": "finalized",
+        "reason": null,
+        "orderId": "945816a8-eac5-42e2-aade-54daffaf211b"
+      }
+    }
+  }
+}
