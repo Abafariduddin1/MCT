@@ -1,0 +1,393 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> fomo-bot-backend@0.3.1 test
+> npm run build && node scripts/test-backend.mjs && node scripts/test-core.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> fomo-bot-backend@0.3.1 build
+> tsc -p tsconfig.json
+
+✔ copy baseline is future-only, claims deduplicate overlap and stale buys never execute (80.074243ms)
+✔ later sale in the same history scan suppresses its older buy (16.497841ms)
+✔ history failure blocks the copy sleeve without disabling independent normal trading (6.489982ms)
+✔ history adapter uses shared RPC quota and retains finalized own-transfer filters (43.815684ms)
+✔ controller persists and books an actual guarded native SDK transaction through the RPC executor (134.178645ms)
+✔ shared provider queue prioritizes exits and still gives old discovery a turn (77.736429ms)
+✔ notification failure never changes the ledger fill or submits another transaction (71.672296ms)
+✔ default controller refuses missing provider setup before attempting wallet access (8.842308ms)
+✔ HTTP state requires header authentication; query credentials and browser origins are refused (86.285633ms)
+✔ HTTP command ACK is not a fill, replay is durable, and reconnect reads the result (53.713722ms)
+✔ WebSocket authenticates at upgrade and supplies authoritative snapshots (167.306474ms)
+✔ external bindings require TLS and predictable controller credentials are refused (12.540679ms)
+✔ paper entry, partial sale and full sale conserve exact cash and original cost (81.368024ms)
+✔ replayed ids return the original action and changed payloads cannot spend again (11.143015ms)
+✔ all-in cap rejects an amount whose principal alone equals the limit (8.818391ms)
+✔ a manual trade cannot bypass a stale, incomplete or failed safety audit (39.835723ms)
+✔ new launches remain blocked under every preset (50.816131ms)
+✔ unowned tokens and invalid amounts never become financial requests (6.7203ms)
+✔ ledger lock and schema errors never reset saved capital (4.020468ms)
+✔ signed intent and exact audit are durable before a live transport is called (17.953841ms)
+✔ unknown submission survives restart, is never resent and settles only once (22.974973ms)
+✔ confirmed effects stay blocked until matching finalized receipt (23.010926ms)
+✔ failed transactions debit their fee without creating a position or double debit (16.054981ms)
+✔ finality disagreement halts entries and keeps the unresolved record (17.407836ms)
+✔ panic cancels an in-flight buy before preparation and blocks manual entry (33.857073ms)
+✔ panic sells only managed holdings and failed routes leave visible positions (19.239976ms)
+✔ auto-pilot off retains protective stop exits (30.88515ms)
+✔ partial take profit is persisted once and a later target crossing does not repeat it (36.683896ms)
+✔ a change in SOL reference does not become realized trading profit (5.189024ms)
+✔ flat reallocation preserves drawdown history and reserve conservation (8.387169ms)
+✔ a queued leader sale during a pending follower buy exits only the copied fraction (19.144852ms)
+✔ gate refuses calls outside the engine authorization context (4.105637ms)
+✔ an interrupted unsigned order is rejected on recovery without a send (13.526649ms)
+✔ cash/cost-basis corruption is refused even when allocation cash still adds up (3.876611ms)
+✔ slow mark refresh does not hold the protection scheduler or block a panic exit (22.848181ms)
+✔ an unresolved buy reservation cannot be borrowed by a second command or reallocation (19.198183ms)
+✔ halted loss budgets block new entries but retain exits (18.490302ms)
+✔ Jito accepts only a guarded swap with durable intent and reports submitted rather than filled (61.774888ms)
+✔ a missing durable ledger intent prevents any submission (8.005351ms)
+✔ unknown execution outcomes are attempted once and remain blocked after a restart (19.178183ms)
+✔ untrusted serialized swap objects and wrong tip destinations cannot authorize a bundle (13.246295ms)
+✔ tip caps and expiry are enforced before a network send (21.859095ms)
+✔ the paper preparation path cannot read keys or generate a signed live trade (13.723076ms)
+✔ encrypted vault round-trips a wallet, refuses overwrite, and rejects the wrong key or altered data (8.919334ms)
+✔ quota reservations persist across instances and keep an exit reserve available (6.708922ms)
+✔ quota budgets reset on a new UTC day and corrupt records cannot erase usage (3.263284ms)
+✔ money parsing remains exact and token image URLs cannot point to local services (0.568789ms)
+✔ dynamic fees convert micro-lamports per CU and cannot raise network/slippage caps (11.588379ms)
+✔ new backend config retains finalized copy history and rejects unsupported execution endpoints (2.818281ms)
+✔ on-chain mint parsing refuses extended or authority-bearing mints (0.493466ms)
+✔ read-only Solana services use the real SDK, meter RPC, and never open a wallet (13.936669ms)
+✔ the actual SDK can use reserved RPC credits for an exit path while background reads stay blocked (13.670847ms)
+✔ native build requests use zero platform fee, controlled wrapping and the chosen bundle mode (22.51392ms)
+✔ build parser rejects wrong assets, weaker minimum output, provider tips and duplicate fee instructions (11.380264ms)
+✔ price reference caches concurrent requests and sizes SOL with conservative integer rounding (7.966834ms)
+✔ missing, stale, future or depegged reference data blocks SOL sizing (11.841862ms)
+✔ native fee caps bound even uint64 suggestions and RPC omits the Jito tip (7.382371ms)
+✔ stale or unavailable optional tip floor never raises the configured minimum/cap (6.659017ms)
+✔ native SOL buy is decoded, simulated twice and signed before guarded Jito submission (28.267152ms)
+✔ native buy receipt separates SOL input, rent and fees from its token credit (14.446879ms)
+✔ native token sale unwraps proceeds and reports the gross SOL receipt separately from fees (9.778113ms)
+✔ an unexpected SOL debit, unrelated token debit or frozen output is rejected before submission (20.891452ms)
+✔ native sizing enforces both the SOL cap and an independently priced all-in position ceiling (10.243446ms)
+✔ funded wrapped SOL, excessive actual fee and an expired blockhash refuse native execution (24.253665ms)
+✔ native RPC transport submits once without tip and does not retry an ambiguous send (26.068669ms)
+✔ two Jito executor instances sharing state cannot race into duplicate submission (12.996818ms)
+✔ an absent durable native intent blocks both transport paths (15.973097ms)
+✔ changed encoded route fees and unapproved auxiliary instructions refuse signing (17.826038ms)
+✔ native confirmation waits for requested finality and never trusts a transport acknowledgement (9.201741ms)
+✔ native sell preparation remains available when the SOL valuation source is unavailable (5.382487ms)
+✔ a receipt whose signed message is changed cannot become a confirmed fill (7.730736ms)
+✔ a captured real unsigned V2 build validates all limits after conservative one-unit rounding (2.207998ms)
+✔ current V2 routing executes both native preparation flows with guarded simulation and receipts (17.764746ms)
+✔ an unrelated frozen airdrop cannot block a native exit (6.683213ms)
+✔ Dex parsing chooses liquid exact-base Solana pairs and does not disguise FDV as market cap (1.572567ms)
+✔ Dex batching uses at most thirty mints per request and caching avoids duplicate reads (22.45061ms)
+✔ new or stale discovery tokens remain ineligible without spending safety RPC/report quota (6.261025ms)
+✔ a safety badge requires all checks and a fresh liquidity drop invalidates a cached pass (0.937978ms)
+✔ missing LP evidence and unknown risk levels never produce a passing badge (1.335509ms)
+✔ free Pump subscriptions use one socket, reconnect correctly, and never request metered trades (553.593013ms)
+✔ Pump notifications are bounded, deduplicated, and bonding progress is unknown unless reported (9.663299ms)
+✔ opted-in trade events consume persisted budget including duplicates and stop at the limit (14.796198ms)
+✔ metered caps also stop on the final malformed or untracked event (24.047202ms)
+✔ feed charts contain only observed points and missing bonding data is kept unknown (1.596223ms)
+✔ market refresh keeps running while a safety report is still pending (1017.632729ms)
+✔ a metadata-only Pump event cannot renew the timestamp of an old market-cap observation (1.042426ms)
+✔ entry cannot consume the cash required for its protective exit (42.43141ms)
+✔ an exactly funded entry keeps its own exit fee and can sell without borrowing reserve (28.342456ms)
+✔ performance attributes partial exits to the entry strategy without counting multiple wins (29.187214ms)
+✔ performance includes failed transaction fees and distinguishes unfinalized effects (20.057276ms)
+ℹ tests 90
+ℹ suites 0
+ℹ pass 90
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2379.649377
+{"leader":"GbTan6ZM5j218FpNi973jd3f6rE8X1KzYs9MWz4D3pCB","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.589Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.590Z","type":"started"}
+{"signature":"leader-buy","side":"buy","mint":"6duzo9m5UcAnRiH5dEwgvn8fsVeuvX3qq2qVjiFaHvTe","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.600Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"6duzo9m5UcAnRiH5dEwgvn8fsVeuvX3qq2qVjiFaHvTe","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.603Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.606Z","type":"copy_poll_complete"}
+{"mint":"6duzo9m5UcAnRiH5dEwgvn8fsVeuvX3qq2qVjiFaHvTe","failures":1,"reason":"No sell route","at":"2026-10-16T21:51:42.607Z","type":"exit_problem"}
+{"mint":"6duzo9m5UcAnRiH5dEwgvn8fsVeuvX3qq2qVjiFaHvTe","failures":2,"reason":"No sell route","at":"2026-10-16T21:51:42.609Z","type":"exit_problem"}
+{"mint":"6duzo9m5UcAnRiH5dEwgvn8fsVeuvX3qq2qVjiFaHvTe","failures":3,"reason":"No sell route","at":"2026-10-16T21:51:42.610Z","type":"exit_problem"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.615Z","type":"started"}
+{"mode":"paper","bucket":"normal","mint":"6duzo9m5UcAnRiH5dEwgvn8fsVeuvX3qq2qVjiFaHvTe","inputUsdc":7,"totalCostUsdc":7.209528,"amount":"6979000","at":"2026-10-16T21:51:42.617Z","type":"buy"}
+{"leader":"GbTan6ZM5j218FpNi973jd3f6rE8X1KzYs9MWz4D3pCB","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.621Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.623Z","type":"started"}
+✔ missing routes in SOL paper are marked zero and cannot be revived by cash repricing (28.43691ms)
+✔ a slow notifier cannot stall paper order handling (5.807029ms)
+{"leader":"GbTan6ZM5j218FpNi973jd3f6rE8X1KzYs9MWz4D3pCB","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.886Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.887Z","type":"started"}
+✔ SOL reallocation changes exact native buckets while retaining the total and accounting history (239.451793ms)
+✔ corrupted native paper amounts and unsupported old state formats are refused (38.166353ms)
+✔ quotes reject excessive slippage, fees, substituted mints and malformed raw quantities (1.678989ms)
+✔ execution timeout is attempted once, never duplicated (4.889762ms)
+✔ read-only API requests can recover from transient errors (506.521543ms)
+✔ order requests include the accepted minimum tip and transaction ceiling (4.006227ms)
+✔ HTTP validation details are useful and credentials are redacted by the CLI sanitizer (1.791178ms)
+✔ large token amounts remain exact and authority-bearing mints fail (1.432746ms)
+✔ simulation cannot spend extra USDC, add delegation, drain SOL or undershoot output (5.087331ms)
+✔ live construction is blocked before reading any private key file (0.689853ms)
+✔ the real SDK signs a v0 transaction only after wallet, programs and exact simulated balances pass (47.380536ms)
+✔ a SOL transfer cannot hide inside the rent allowance (0.669903ms)
+✔ transaction-encoded limits are checked independently of a good simulation or JSON quote (1.38228ms)
+✔ decoder supports version 1 observations, Jupiter and direct PumpSwap swap instructions (4.754026ms)
+✔ decoder ignores address mentions, non-swap instructions, LP deposits, failed transactions and missing ownership (0.994083ms)
+✔ decoder records the actual leader before balance for proportional exits and neutralises account rent (0.622942ms)
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.687Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.688Z","type":"started"}
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.692Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.693Z","type":"started"}
+{"signature":"new","side":"buy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.698Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.703Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.706Z","type":"copy_poll_complete"}
+{"signature":"trim","side":"sell","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"10000000","baseAmount":"2000000","tokenAmount":"2000000","at":"2026-10-16T21:51:42.712Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"signals":2,"skipped":0,"estimatedCredits":20,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.714Z","type":"copy_poll_complete"}
+{"mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","netPnlUsdc":-0.056468000000000185,"reason":"Leader proportional sale","signature":null,"at":"2026-10-16T21:51:42.716Z","type":"sell"}
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.724Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.725Z","type":"started"}
+{"signature":"new","side":"buy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.729Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.730Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.734Z","type":"copy_poll_complete"}
+{"signals":1,"skipped":0,"estimatedCredits":20,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.740Z","type":"copy_poll_complete"}
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.743Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.749Z","type":"started"}
+{"signature":"new","side":"buy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.753Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.756Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.758Z","type":"copy_poll_complete"}
+{"signature":"sale","side":"sell","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"10000000","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.765Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"signals":2,"skipped":0,"estimatedCredits":20,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.768Z","type":"copy_poll_complete"}
+{"mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","netPnlUsdc":-0.2599410000000004,"reason":"Leader proportional sale","signature":null,"at":"2026-10-16T21:51:42.771Z","type":"sell"}
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.779Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.780Z","type":"started"}
+{"signature":"new","side":"buy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.784Z","leaderAt":1792187302000,"type":"copy_signal"}
+{"signature":"new","reason":"Stale or future-dated leader buy","at":"2026-10-16T21:51:42.785Z","type":"copy_skip"}
+{"signals":1,"skipped":1,"estimatedCredits":10,"backlog":false,"positions":0,"at":"2026-10-16T21:51:42.787Z","type":"copy_poll_complete"}
+{"reason":"History unavailable","at":"2026-10-16T21:51:42.794Z","type":"copy_blocked"}
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.798Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.799Z","type":"started"}
+{"reason":"History pagination did not advance","at":"2026-10-16T21:51:42.805Z","type":"copy_blocked"}
+{"leader":"5YtFo3S1x2wwuiHESdDp87FsNSUSuriTyq4mvV97HYLd","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.815Z","type":"copy_baseline"}
+{"mode":"live","strategy":"hybrid","cashUsdc":30,"positions":0,"at":"2026-10-16T21:51:42.816Z","type":"started"}
+{"signature":"copied-buy","side":"buy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.821Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"side":"buy","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","signature":"buy-0","at":"2026-10-16T21:51:42.824Z","type":"submitted"}
+{"at":"2026-10-16T21:51:42.824Z","type":"execute_response"}
+{"mode":"live","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","inputUsdc":7.43,"totalCostUsdc":7.4356,"signature":"buy-0","at":"2026-10-16T21:51:42.826Z","type":"buy"}
+{"signature":"copied-trim","side":"sell","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"10000000","baseAmount":"2000000","tokenAmount":"2000000","at":"2026-10-16T21:51:42.830Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"signals":2,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.838Z","type":"copy_poll_complete"}
+{"side":"sell","mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","signature":"sell-1","at":"2026-10-16T21:51:42.841Z","type":"submitted"}
+{"at":"2026-10-16T21:51:42.841Z","type":"execute_response"}
+{"mint":"3GM3YF8DxN64CdV9hnT4XfqYHbsgPSks2L4QWZ5PxCqT","netPnlUsdc":-0.006720000000000059,"reason":"Leader proportional sale","signature":"sell-1","at":"2026-10-16T21:51:42.842Z","type":"sell"}
+{"signals":2,"skipped":0,"estimatedCredits":20,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.851Z","type":"copy_poll_complete"}
+✔ filtered history uses mint-independent own transfers accepted by the amount-filter contract and parsed v1 (10.531281ms)
+✔ first start follows only future slots, with no historical entry (7.23661ms)
+✔ paper copy buys with its own budget, then proportionally exits a leader trim (31.080675ms)
+✔ a claimed leader signature cannot buy again, including replayed later-slot history (20.532841ms)
+✔ pause skips leader buys but keeps observed sale requests (33.58408ms)
+✔ stale leader entries do not buy; stream failures block only the copy sleeve (20.321951ms)
+✔ history credit budget prevents calls and paginated intervals do not advance prematurely (11.064737ms)
+✔ immediate finalized live fills retain copy claims, queued trims and history coverage (46.464572ms)
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.632Z","type":"started"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.642Z","type":"started"}
+✔ an already ready fast refresh cannot postpone overdue discovery launch (13.154406ms)
+{"stage":"discovery","candidates":200,"eligible":200,"warming":200,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":200},"at":"2026-10-16T21:51:42.690Z","type":"scan_complete"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.701Z","type":"started"}
+✔ repeated fast refreshes allow the real discovery pipeline to populate its shortlist (54.692851ms)
+✔ an empty fast shortlist does not perform a redundant screening RPC or claim a normal scan (11.841111ms)
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.546Z","type":"started"}
+{"mode":"paper","bucket":"normal","mint":"mint","inputUsdc":10,"totalCostUsdc":10.0056,"amount":"997000","momentumPct":1,"at":"2026-10-16T21:51:42.551Z","type":"buy"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":189.9944,"positions":1,"at":"2026-10-16T21:51:42.553Z","type":"started"}
+{"mint":"mint","netPnlUsdc":-4.0291999999999994,"reason":"Stop loss","signature":null,"at":"2026-10-16T21:51:42.556Z","type":"sell"}
+{"side":"buy","mint":"mint","signature":"sig","at":"2026-10-16T21:51:42.566Z","type":"submitted"}
+{"reason":"timeout","signature":"sig","at":"2026-10-16T21:51:42.567Z","type":"execution_unknown"}
+{"mint":"mint","netPnlUsdc":0.7900000000000009,"reason":"test","signature":"sig","at":"2026-10-16T21:51:42.573Z","type":"sell"}
+{"reason":"Daily loss limit reached","equityUsdc":14.79,"at":"2026-10-16T21:51:42.573Z","type":"halt"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.586Z","type":"started"}
+{"mint":"mint","failures":1,"reason":"No route","at":"2026-10-16T21:51:42.586Z","type":"exit_problem"}
+{"mint":"mint","failures":2,"reason":"No route","at":"2026-10-16T21:51:42.588Z","type":"exit_problem"}
+{"mint":"mint","failures":3,"reason":"No route","at":"2026-10-16T21:51:42.589Z","type":"exit_problem"}
+{"signature":"sig","at":"2026-10-16T21:51:42.595Z","type":"expired_unexecuted"}
+{"mint":"mint","netPnlUsdc":0.7944000000000013,"reason":"test","signature":"sale","at":"2026-10-16T21:51:42.608Z","type":"sell"}
+{"mode":"live","mint":"mint","inputUsdc":1,"totalCostUsdc":1.0056,"signature":"buy","at":"2026-10-16T21:51:42.614Z","type":"buy"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.618Z","type":"started"}
+{"reason":"price feed down","cachedPriceAvailable":true,"at":"2026-10-16T21:51:42.618Z","type":"reference_price_error"}
+{"mint":"mint","netPnlUsdc":-4.0236,"reason":"Stop loss","signature":null,"at":"2026-10-16T21:51:42.619Z","type":"sell"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.625Z","type":"started"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.629Z","type":"started"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:42.636Z","type":"started"}
+{"reason":"Daily loss limit reached","at":"2026-10-16T21:51:42.637Z","type":"resume_rejected"}
+{"at":"2026-10-16T21:51:42.638Z","type":"flatten_complete"}
+✔ paper flow uses executable quotes, charges costs, survives restart and records a real simulated loss (21.98173ms)
+✔ unknown live execution persists intent and blocks replacement orders after restart (7.406878ms)
+✔ live equity deducts SOL fees once and failed fees count towards loss limits (4.044755ms)
+✔ three unavailable sell routes halt entries and retain the unsold position (8.30197ms)
+✔ a second process cannot share an accounting directory (1.273515ms)
+✔ an expired unknown transaction clears only when wallet balances are unchanged (5.534897ms)
+✔ confirmed sales accept negative token deltas and survive repeated settlement checks (11.752917ms)
+✔ a failed settlement save cannot apply a fill twice in memory or on restart (5.916564ms)
+✔ reference-price outage pauses entries but keeps cached-reference protective exits running (7.180956ms)
+✔ all-in entry cost cannot bypass the position ceiling or sizing-risk budget (3.653503ms)
+✔ live start is blocked before wallet inspection or execution (0.495058ms)
+✔ expired and worsened copy quotes cannot create a paper position (3.111394ms)
+✔ a leader signal expiring during live validation cannot be submitted (1.642633ms)
+✔ resume cannot erase a drawdown halt and flatten remains paused after closing (7.894755ms)
+✔ stored malformed risk controls and trade P&L cannot silently reset accounting (4.873687ms)
+{"mode":"live","mint":"mint","inputUsdc":1,"totalCostUsdc":1.0056,"signature":"buy","at":"2026-10-16T21:51:42.548Z","type":"buy"}
+{"signature":"buy","at":"2026-10-16T21:51:42.551Z","type":"fill_finalized"}
+{"mode":"live","mint":"mint","inputUsdc":1,"totalCostUsdc":1.0056,"signature":"buy","at":"2026-10-16T21:51:42.556Z","type":"buy"}
+{"mode":"live","mint":"mint","inputUsdc":1,"totalCostUsdc":1.0056,"signature":"buy","at":"2026-10-16T21:51:42.561Z","type":"buy"}
+{"mode":"live","mint":"mint","inputUsdc":1,"totalCostUsdc":1.0056,"signature":"buy","at":"2026-10-16T21:51:42.565Z","type":"buy"}
+✔ confirmed operation commits one holding while retaining a durable finality verification record (10.906328ms)
+✔ a finality mismatch pauses entries and preserves the accounting for reconciliation (6.400636ms)
+✔ a missing confirmed fill beyond finalized expiry cannot be resubmitted or erased (4.266009ms)
+✔ leader trims observed during pending confirmation apply once when its holding is committed (2.999053ms)
+{"leader":"6mKZ3iPAts5Ld8BpPJ4KWNQkFTnHCXYv2GZ1HVLCoXhQ","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.898Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.901Z","type":"started"}
+{"signature":"leader-buy","side":"buy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.915Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.919Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.921Z","type":"copy_poll_complete"}
+{"leader":"6mKZ3iPAts5Ld8BpPJ4KWNQkFTnHCXYv2GZ1HVLCoXhQ","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.930Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.932Z","type":"started"}
+✔ a synthetic WebSocket notification reaches an automatic SOL paper copy fill without fallback polling (32.30083ms)
+{"signature":"leader-buy","side":"buy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.947Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.948Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.952Z","type":"copy_poll_complete"}
+{"signature":"leader-trim","side":"sell","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"10000000","baseAmount":"2000000","tokenAmount":"2000000","at":"2026-10-16T21:51:42.965Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"signals":2,"skipped":0,"estimatedCredits":20,"backlog":false,"positions":1,"at":"2026-10-16T21:51:42.968Z","type":"copy_poll_complete"}
+{"mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","netPnlUsdc":-0.05646770000000023,"reason":"Leader proportional sale","signature":null,"at":"2026-10-16T21:51:42.971Z","type":"sell"}
+{"leader":"6mKZ3iPAts5Ld8BpPJ4KWNQkFTnHCXYv2GZ1HVLCoXhQ","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:42.978Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:42.979Z","type":"started"}
+✔ live notifications queue proportional exits which are executed before discovery (50.583639ms)
+{"signals":0,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":0,"at":"2026-10-16T21:51:42.989Z","type":"copy_poll_complete"}
+{"signature":"leader-buy","side":"buy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:42.993Z","leaderAt":1792187502000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:42.999Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":20,"backlog":false,"positions":1,"at":"2026-10-16T21:51:43.001Z","type":"copy_poll_complete"}
+{"signals":1,"skipped":0,"estimatedCredits":30,"backlog":false,"positions":1,"at":"2026-10-16T21:51:43.007Z","type":"copy_poll_complete"}
+{"leader":"6mKZ3iPAts5Ld8BpPJ4KWNQkFTnHCXYv2GZ1HVLCoXhQ","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.014Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.015Z","type":"started"}
+✔ overlapping coverage recovers a late-indexed transaction and does not duplicate its fill (33.996034ms)
+{"signature":"leader-trim","side":"sell","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"10000000","baseAmount":"2000000","tokenAmount":"2000000","at":"2026-10-16T21:51:43.022Z","leaderAt":1792187503000,"type":"copy_signal"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":0,"at":"2026-10-16T21:51:43.024Z","type":"copy_poll_complete"}
+{"leader":"6mKZ3iPAts5Ld8BpPJ4KWNQkFTnHCXYv2GZ1HVLCoXhQ","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.030Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.033Z","type":"started"}
+✔ a pending buy still records leader sells atomically for its eventual holding (17.980382ms)
+{"signature":"leader-buy","side":"buy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:43.043Z","leaderAt":1792187503000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"Fah89M8J3K4MAJkGeE2Sue8YJtv36W9UgjFDdbSeRBfp","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:43.045Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:43.047Z","type":"copy_poll_complete"}
+{"leader":"6mKZ3iPAts5Ld8BpPJ4KWNQkFTnHCXYv2GZ1HVLCoXhQ","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.051Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.053Z","type":"started"}
+✔ metadata discovery can remain in flight while a copy notification is handled (21.530258ms)
+✔ malformed persisted SOL and stream bookkeeping cannot silently reset capital or quotas (9.954128ms)
+✔ screen fails closed on missing audits and rejects young, concentrated, stale and extended-program tokens (1.797007ms)
+✔ momentum needs time-separated advancing price blocks and rejects stale snapshots (0.698275ms)
+✔ loss, exposure and pending orders block entries (0.416871ms)
+✔ stops and trailing exits use estimated sale proceeds after costs (0.225561ms)
+✔ invalid environment values cannot silently enable live mode or oversized positions (0.95211ms)
+✔ position sizing reserves entry fees and combined fee caps cannot be inconsistent (0.766128ms)
+✔ pinned RPC dependency override works with the SDK JSON-RPC client (8.478608ms)
+✔ settlement uses confirmed token and SOL deltas, including owner identity (56.787447ms)
+✔ non-finalized execution cannot commit the trade ledger (0.360865ms)
+{"leader":"38tp96NBgh7VAUymA7j3vgPGsBXevNkiBh2a7Chg5Adb","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.013Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.015Z","type":"started"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.021Z","type":"started"}
+{"signature":"leader-buy","side":"buy","mint":"AHi3PCxYxPv6SJoPzc1GsLpYJuTwHrkXTwMqA7FnTKmd","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:43.037Z","leaderAt":1792187503000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"AHi3PCxYxPv6SJoPzc1GsLpYJuTwHrkXTwMqA7FnTKmd","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:43.047Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:43.050Z","type":"copy_poll_complete"}
+Stopped. Open positions remain saved; no automatic sale on Ctrl+C.
+{"leader":"38tp96NBgh7VAUymA7j3vgPGsBXevNkiBh2a7Chg5Adb","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.056Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.057Z","type":"started"}
+✔ the running engine wakes on a notification, buys, and saves its holding on stop (47.993213ms)
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.060Z","type":"started"}
+{"signature":"leader-buy","side":"buy","mint":"AHi3PCxYxPv6SJoPzc1GsLpYJuTwHrkXTwMqA7FnTKmd","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:43.816Z","leaderAt":1792187503000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"AHi3PCxYxPv6SJoPzc1GsLpYJuTwHrkXTwMqA7FnTKmd","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:43.818Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:43.820Z","type":"copy_poll_complete"}
+Stopped. Open positions remain saved; no automatic sale on Ctrl+C.
+{"leader":"38tp96NBgh7VAUymA7j3vgPGsBXevNkiBh2a7Chg5Adb","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.824Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.825Z","type":"started"}
+✔ a coalesced copy hint runs at its deadline instead of waiting an additional scheduler second (768.349042ms)
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.828Z","type":"started"}
+Stopped. Open positions remain saved; no automatic sale on Ctrl+C.
+{"leader":"38tp96NBgh7VAUymA7j3vgPGsBXevNkiBh2a7Chg5Adb","nextSlot":101,"futureOnly":true,"at":"2026-10-16T21:51:43.833Z","type":"copy_baseline"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.834Z","type":"started"}
+✔ stopping the running engine cancels blocked background reads before releasing the lock (9.712783ms)
+{"signature":"leader-buy","side":"buy","mint":"AHi3PCxYxPv6SJoPzc1GsLpYJuTwHrkXTwMqA7FnTKmd","decimals":6,"baseMint":"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v","leaderBefore":"0","baseAmount":"10000000","tokenAmount":"10000000","at":"2026-10-16T21:51:43.839Z","leaderAt":1792187503000,"type":"copy_signal"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"AHi3PCxYxPv6SJoPzc1GsLpYJuTwHrkXTwMqA7FnTKmd","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7457560","at":"2026-10-16T21:51:43.841Z","type":"buy"}
+{"signals":1,"skipped":0,"estimatedCredits":10,"backlog":false,"positions":1,"at":"2026-10-16T21:51:43.843Z","type":"copy_poll_complete"}
+✔ metadata screens reuse fresh streamed slots while entries still require confirmed RPC data (12.300856ms)
+✔ an urgent exit overtakes queued discovery without exceeding the shared rate interval (68.267753ms)
+✔ discovery gets bandwidth under continuous fast refreshes while an urgent exit stays first (138.517607ms)
+✔ token metadata resolves 205 mints in three bounded batches and serves short-lived cache hits (8.201299ms)
+✔ broad discovery exceeds the old cap and deduplicates category lists (4.763727ms)
+✔ SOL exits receive exit fee/slippage caps rather than entry caps (1.020973ms)
+✔ filtered history requires finalized source data while processed hints remain wake notifications (1.061284ms)
+✔ cancelling queued discovery removes its rate-limit timer and makes no request (1.664667ms)
+✔ cancelling an in-flight read aborts the fetch without a retry (3.296804ms)
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.104Z","type":"started"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.109Z","type":"started"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.110Z","type":"scan_complete"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.112Z","type":"scan_complete"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.113Z","type":"scan_complete"}
+{"mode":"paper","bucket":"normal","strategy":"momentum","mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7391040","momentumPct":0.8999999999999897,"at":"2026-10-16T21:51:43.118Z","type":"buy"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":0,"attempted":1,"positions":1,"reasons":{},"at":"2026-10-16T21:51:43.119Z","type":"scan_complete"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":212.310472,"positions":1,"at":"2026-10-16T21:51:43.120Z","type":"started"}
+{"mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","netPnlUsdc":2.621285600000001,"reason":"Take profit","signature":null,"at":"2026-10-16T21:51:43.122Z","type":"sell"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.130Z","type":"started"}
+{"mode":"paper","bucket":"copy","strategy":"copy","mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","inputUsdc":7.000000000000001,"totalCostUsdc":7.209528000000001,"amount":"6979000","at":"2026-10-16T21:51:43.132Z","type":"buy"}
+{"mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","netPnlUsdc":-0.055892400000000064,"reason":"trim","signature":null,"at":"2026-10-16T21:51:43.133Z","type":"sell"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.137Z","type":"started"}
+{"mode":"paper","strategy":"hybrid","paperBase":"SOL","cashUsdc":220.00000000000003,"positions":0,"at":"2026-10-16T21:51:43.141Z","type":"started"}
+{"mode":"paper","bucket":"normal","mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","inputUsdc":7.000000000000001,"totalCostUsdc":7.209528000000001,"amount":"6979000","at":"2026-10-16T21:51:43.142Z","type":"buy"}
+{"mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","netPnlUsdc":-0.25706500000000077,"reason":"close","signature":null,"at":"2026-10-16T21:51:43.143Z","type":"sell"}
+{"mode":"paper","bucket":"normal","mint":"8avdtHd5oRn8v27D1kugAmyoGxVDthnjKbwHPL4oZA27","inputUsdc":7.000000000000001,"totalCostUsdc":7.005600000000001,"amount":"6979000","at":"2026-10-16T21:51:43.145Z","type":"buy"}
+✔ SOL paper begins with EUR-valued virtual native balance and isolated exact-lamport budgets (8.091963ms)
+✔ SOL paper automatically buys and sells via SOL pairs, books rent/fees and survives restart (20.729126ms)
+✔ SOL partial exits retain exact remaining native cost basis and never touch another sleeve (7.696124ms)
+✔ idle SOL reprices in EUR without fabricating a realised trading profit (3.131374ms)
+✔ SOL paper fee history charges first token-account rent only once for a reused mint (7.823857ms)
+✔ ECB reference parser accepts current USD rate and refuses stale/invalid data (1.108036ms)
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:43.175Z","type":"started"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.178Z","type":"scan_complete"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.179Z","type":"scan_complete"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.180Z","type":"scan_complete"}
+{"mode":"paper","bucket":"normal","strategy":"momentum","mint":"6DquCRsxGEHm9NsSc5LAJgzkSeYWNtPeVfhd33etJ4dh","inputUsdc":7.48,"totalCostUsdc":7.689528,"amount":"7391040","momentumPct":0.8999999999999897,"at":"2026-10-16T21:51:43.182Z","type":"buy"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":0,"attempted":1,"positions":1,"reasons":{},"at":"2026-10-16T21:51:43.183Z","type":"scan_complete"}
+{"mint":"6DquCRsxGEHm9NsSc5LAJgzkSeYWNtPeVfhd33etJ4dh","netPnlUsdc":2.621285000000001,"reason":"Take profit","signature":null,"at":"2026-10-16T21:51:43.184Z","type":"sell"}
+{"mode":"live","strategy":"hybrid","cashUsdc":20,"positions":0,"at":"2026-10-16T21:51:43.193Z","type":"started"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.194Z","type":"scan_complete"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.195Z","type":"scan_complete"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":1,"attempted":0,"positions":0,"reasons":{"Collecting momentum window":1},"at":"2026-10-16T21:51:43.196Z","type":"scan_complete"}
+{"side":"buy","mint":"6DquCRsxGEHm9NsSc5LAJgzkSeYWNtPeVfhd33etJ4dh","signature":"buy-signature","at":"2026-10-16T21:51:43.198Z","type":"submitted"}
+{"status":"Success","at":"2026-10-16T21:51:43.198Z","type":"execute_response"}
+{"mode":"live","mint":"6DquCRsxGEHm9NsSc5LAJgzkSeYWNtPeVfhd33etJ4dh","inputUsdc":7.43,"totalCostUsdc":7.4356,"signature":"buy-signature","at":"2026-10-16T21:51:43.200Z","type":"buy"}
+{"stage":"discovery","candidates":1,"eligible":1,"warming":0,"attempted":1,"positions":1,"reasons":{},"at":"2026-10-16T21:51:43.201Z","type":"scan_complete"}
+{"side":"sell","mint":"6DquCRsxGEHm9NsSc5LAJgzkSeYWNtPeVfhd33etJ4dh","signature":"sell-signature","at":"2026-10-16T21:51:43.203Z","type":"submitted"}
+{"status":"Success","at":"2026-10-16T21:51:43.203Z","type":"execute_response"}
+{"mint":"6DquCRsxGEHm9NsSc5LAJgzkSeYWNtPeVfhd33etJ4dh","netPnlUsdc":2.868016,"reason":"Take profit","signature":"sell-signature","at":"2026-10-16T21:51:43.204Z","type":"sell"}
+{"mode":"paper","strategy":"hybrid","paperBase":"USDC","cashUsdc":200,"positions":0,"at":"2026-10-16T21:51:43.210Z","type":"started"}
+{"stage":"discovery","candidates":1,"eligible":0,"warming":0,"attempted":0,"positions":0,"reasons":{"Provider verification required":1},"at":"2026-10-16T21:51:43.210Z","type":"scan_complete"}
+✔ automatic paper scan produces a buy and later a costed sell through the full engine (18.281998ms)
+✔ live-mode engine routes a valid buy and sell through submission and finalized settlement using mocks (17.511383ms)
+✔ buy-pressure rejection does not erase the observed price history (0.332563ms)
+✔ breakout uses the prior range, while a one-tick pump is refused (0.416349ms)
+✔ experimental range reversion is explicit and allocation totals cannot overbook capital (0.781492ms)
+✔ pullback confirms a rebound inside an upward trend rather than demanding a new high (0.29793ms)
+✔ a security-ineligible scan reports the rejection and never submits an order (3.036801ms)
+✔ performance counts completed positions instead of inflating wins with partial exits (0.505144ms)
+✔ standard stream uses processed native and owner-filtered classic token subscriptions without address logs (9.133507ms)
+✔ unowned/malformed account notifications cannot wake copy trading (5.429288ms)
+✔ a disconnected socket reconnects and restores subscriptions while keeping usage counts (285.937918ms)
+✔ stream byte/credit budgets stop the connection without reconnecting around the cap (6.398063ms)
+✔ the read-only feed probe stops all timers and sockets after subscriptions are acknowledged (0.608961ms)
+✔ a wake notification removes the scheduler timer delay (0.320454ms)
+ℹ tests 95
+ℹ suites 0
+ℹ pass 95
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1525.996371

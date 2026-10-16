@@ -1,0 +1,51 @@
+{
+  "milestone": "Step 4: native screens and Paper/Real/Copy workspace tabs",
+  "generatedAtUTC": "2026-10-16T22:17:02.308362+00:00",
+  "backendVersion": "0.3.1",
+  "standaloneVersion": "4.0.2",
+  "environment": {
+    "node": "24.19.0",
+    "swift": "6.3",
+    "platform": "Linux",
+    "swiftLanguageMode": "6"
+  },
+  "tests": {
+    "backend": {
+      "passed": 90,
+      "failed": 0
+    },
+    "retainedCore": {
+      "passed": 95,
+      "failed": 0
+    },
+    "swift": {
+      "passed": 41,
+      "failed": 0,
+      "skipped": 1,
+      "skipReason": "Native FoundationNetworking WebSocket unsupported on Linux (-1002); Apple transport test retained"
+    },
+    "totalPassed": 226,
+    "totalFailed": 0,
+    "totalSkipped": 1
+  },
+  "verificationCommandExitCode": 0,
+  "checksPassed": [
+    "TypeScript backend build",
+    "Actual loopback controller HTTP authentication/status",
+    "All six fresh Swift commands accepted by actual backend parser (not executed)",
+    "Swift core Release build",
+    "iOS screen and app entry syntax",
+    "Protected runtime/core/standalone source comparison"
+  ],
+  "unverified": [
+    "Apple iOS SDK type checking",
+    "Installed iPhone and native Apple WebSocket/TLS",
+    "Keychain, haptics, layout and scene lifecycle on device",
+    "Remote TLS endpoint deployment",
+    "Xcode/IPA signing and installation (Step 5)",
+    "Funded trading, execution latency and strategy profitability"
+  ],
+  "fundedTransactionsExecuted": 0,
+  "guaranteedProfitClaimed": false,
+  "defaults": "Paper; existing strategies and risk limits unchanged"
+}

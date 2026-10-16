@@ -1,0 +1,147 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> fomo-bot-backend@0.3.1 verify:ios
+> npm run build && node scripts/verify-ios.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> fomo-bot-backend@0.3.1 build
+> tsc -p tsconfig.json
+
+Local paper fixture is ready. No external provider is connected.
+Another instance of SwiftPM (PID: 68) is already running using '/workspace/scratch/a36e7b39b8b0/work/step4/source/fomo-bot/ios/.build', waiting until that process has finished execution...[0/1] Planning build
+Building for debugging...
+[0/2] Write swift-version-5D65B911BCBD1F49.txt
+Build complete! (0.10s)
+Test Suite 'All tests' started at 2026-10-17 01:13:36.901
+Test Suite 'debug.xctest' started at 2026-10-17 01:13:36.902
+Test Suite 'AmountTests' started at 2026-10-17 01:13:36.902
+Test Case 'AmountTests.testExactAmounts' started at 2026-10-17 01:13:36.902
+Test Case 'AmountTests.testExactAmounts' passed (0.001 seconds)
+Test Case 'AmountTests.testMintValidation' started at 2026-10-17 01:13:36.903
+Test Case 'AmountTests.testMintValidation' passed (0.0 seconds)
+Test Case 'AmountTests.testRejectsAmbiguousAmounts' started at 2026-10-17 01:13:36.903
+Test Case 'AmountTests.testRejectsAmbiguousAmounts' passed (0.0 seconds)
+Test Suite 'AmountTests' passed at 2026-10-17 01:13:36.904
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'ChartTests' started at 2026-10-17 01:13:36.904
+Test Case 'ChartTests.testCleansInvalidDuplicateAndUnboundedHistory' started at 2026-10-17 01:13:36.904
+Test Case 'ChartTests.testCleansInvalidDuplicateAndUnboundedHistory' passed (0.001 seconds)
+Test Case 'ChartTests.testTimeUsesRealObservationTimesAndLeavesGaps' started at 2026-10-17 01:13:36.905
+Test Case 'ChartTests.testTimeUsesRealObservationTimesAndLeavesGaps' passed (0.0 seconds)
+Test Case 'ChartTests.testTimeframesNeedActualCoverageAndStalenessIsExplicit' started at 2026-10-17 01:13:36.905
+Test Case 'ChartTests.testTimeframesNeedActualCoverageAndStalenessIsExplicit' passed (0.0 seconds)
+Test Suite 'ChartTests' passed at 2026-10-17 01:13:36.905
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'ClientTests' started at 2026-10-17 01:13:36.905
+Test Case 'ClientTests.testAuthenticationFailureDoesNotLoopOrRevealCredential' started at 2026-10-17 01:13:36.905
+Test Case 'ClientTests.testAuthenticationFailureDoesNotLoopOrRevealCredential' passed (0.011 seconds)
+Test Case 'ClientTests.testBackgroundingStopsMutationAndResumesWithFreshSnapshots' started at 2026-10-17 01:13:36.917
+Test Case 'ClientTests.testBackgroundingStopsMutationAndResumesWithFreshSnapshots' passed (0.041 seconds)
+Test Case 'ClientTests.testJournalFailurePreventsSocketSend' started at 2026-10-17 01:13:36.958
+Test Case 'ClientTests.testJournalFailurePreventsSocketSend' passed (0.023 seconds)
+Test Case 'ClientTests.testMissingOriginalRecordStaysUnknownAndCannotBeReplayed' started at 2026-10-17 01:13:36.981
+Test Case 'ClientTests.testMissingOriginalRecordStaysUnknownAndCannotBeReplayed' passed (0.042 seconds)
+Test Case 'ClientTests.testNeedsBothSnapshotsAndPersistsBeforeSendingOneTrade' started at 2026-10-17 01:13:37.023
+Test Case 'ClientTests.testNeedsBothSnapshotsAndPersistsBeforeSendingOneTrade' passed (0.041 seconds)
+Test Case 'ClientTests.testUnknownDeliveryIsReadByOriginalIDAfterReconnectWithoutResending' started at 2026-10-17 01:13:37.064
+Test Case 'ClientTests.testUnknownDeliveryIsReadByOriginalIDAfterReconnectWithoutResending' passed (0.042 seconds)
+Test Case 'ClientTests.testUnknownProtocolBlocksTradingAndDuplicateAlertsAreNotRepeated' started at 2026-10-17 01:13:37.106
+Test Case 'ClientTests.testUnknownProtocolBlocksTradingAndDuplicateAlertsAreNotRepeated' passed (0.056 seconds)
+Test Suite 'ClientTests' passed at 2026-10-17 01:13:37.162
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.256 (0.256) seconds
+Test Suite 'CrossLanguageCommandTests' started at 2026-10-17 01:13:37.162
+Test Case 'CrossLanguageCommandTests.testEveryMutationEncodesForTheActualServerValidator' started at 2026-10-17 01:13:37.162
+Test Case 'CrossLanguageCommandTests.testEveryMutationEncodesForTheActualServerValidator' passed (0.007 seconds)
+Test Suite 'CrossLanguageCommandTests' passed at 2026-10-17 01:13:37.169
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.007 (0.007) seconds
+Test Suite 'EndpointTests' started at 2026-10-17 01:13:37.169
+Test Case 'EndpointTests.testEndpointNormalizationAndSecretIsolation' started at 2026-10-17 01:13:37.169
+Test Case 'EndpointTests.testEndpointNormalizationAndSecretIsolation' passed (0.0 seconds)
+Test Case 'EndpointTests.testPersistedEndpointValidationCannotBeBypassed' started at 2026-10-17 01:13:37.169
+Test Case 'EndpointTests.testPersistedEndpointValidationCannotBeBypassed' passed (0.0 seconds)
+Test Case 'EndpointTests.testRejectsUnsafeEndpointForms' started at 2026-10-17 01:13:37.169
+Test Case 'EndpointTests.testRejectsUnsafeEndpointForms' passed (0.0 seconds)
+Test Suite 'EndpointTests' passed at 2026-10-17 01:13:37.170
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'JournalOrderingTests' started at 2026-10-17 01:13:37.170
+Test Case 'JournalOrderingTests.testLateSendCompletionAndStaleLookupCannotDowngradeARecordedFill' started at 2026-10-17 01:13:37.170
+Test Case 'JournalOrderingTests.testLateSendCompletionAndStaleLookupCannotDowngradeARecordedFill' passed (0.005 seconds)
+Test Suite 'JournalOrderingTests' passed at 2026-10-17 01:13:37.175
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.005 (0.005) seconds
+Test Suite 'JournalTests' started at 2026-10-17 01:13:37.175
+Test Case 'JournalTests.testDiskJournalPreservesIDAndRefusesChangedPayload' started at 2026-10-17 01:13:37.175
+Test Case 'JournalTests.testDiskJournalPreservesIDAndRefusesChangedPayload' passed (0.002 seconds)
+Test Suite 'JournalTests' passed at 2026-10-17 01:13:37.177
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'NativeHTTPTests' started at 2026-10-17 01:13:37.177
+Test Case 'NativeHTTPTests.testNativeWebSocketReadsActualServerAndPreservesIdentifiedControl' started at 2026-10-17 01:13:37.177
+/workspace/scratch/a36e7b39b8b0/work/step4/source/fomo-bot/ios/Tests/FomoBotCoreTests/NativeHTTPTests.swift:19: NativeHTTPTests.testNativeWebSocketReadsActualServerAndPreservesIdentifiedControl : Test skipped - Linux FoundationNetworking returns unsupported URL (-1002) for WebSockets. Run this native transport test with an Apple SDK.
+Test Case 'NativeHTTPTests.testNativeWebSocketReadsActualServerAndPreservesIdentifiedControl' skipped (0.0 seconds)
+Test Case 'NativeHTTPTests.testURLSessionAuthenticatesAndResolvesTheOriginalServerCommand' started at 2026-10-17 01:13:37.177
+Test Case 'NativeHTTPTests.testURLSessionAuthenticatesAndResolvesTheOriginalServerCommand' passed (0.016 seconds)
+Test Suite 'NativeHTTPTests' passed at 2026-10-17 01:13:37.194
+	 Executed 2 tests, with 1 test skipped and 0 failures (0 unexpected) in 0.017 (0.017) seconds
+Test Suite 'PreferenceTests' started at 2026-10-17 01:13:37.194
+Test Case 'PreferenceTests.testEndpointPreferencesContainNoCredentialAndRoundTrip' started at 2026-10-17 01:13:37.194
+Test Case 'PreferenceTests.testEndpointPreferencesContainNoCredentialAndRoundTrip' passed (0.002 seconds)
+Test Suite 'PreferenceTests' passed at 2026-10-17 01:13:37.196
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'ProtocolTests' started at 2026-10-17 01:13:37.196
+Test Case 'ProtocolTests.testAllRealServerFramesDecode' started at 2026-10-17 01:13:37.196
+Test Case 'ProtocolTests.testAllRealServerFramesDecode' passed (0.015 seconds)
+Test Case 'ProtocolTests.testCommandEncodingMatchesStrictFlatServerSchema' started at 2026-10-17 01:13:37.211
+Test Case 'ProtocolTests.testCommandEncodingMatchesStrictFlatServerSchema' passed (0.0 seconds)
+Test Case 'ProtocolTests.testDetectsInconsistentAllocationBalances' started at 2026-10-17 01:13:37.211
+Test Case 'ProtocolTests.testDetectsInconsistentAllocationBalances' passed (0.005 seconds)
+Test Case 'ProtocolTests.testNullFeedAndChartRemainUnknown' started at 2026-10-17 01:13:37.216
+Test Case 'ProtocolTests.testNullFeedAndChartRemainUnknown' passed (0.009 seconds)
+Test Case 'ProtocolTests.testOnlyActualFillReceiptCreatesFillLabel' started at 2026-10-17 01:13:37.225
+Test Case 'ProtocolTests.testOnlyActualFillReceiptCreatesFillLabel' passed (0.008 seconds)
+Test Case 'ProtocolTests.testRecordedPerformanceIsPaperAndDoesNotInflatePartialWins' started at 2026-10-17 01:13:37.234
+Test Case 'ProtocolTests.testRecordedPerformanceIsPaperAndDoesNotInflatePartialWins' passed (0.005 seconds)
+Test Case 'ProtocolTests.testRejectsUnsupportedVersionAndRawNumbers' started at 2026-10-17 01:13:37.238
+Test Case 'ProtocolTests.testRejectsUnsupportedVersionAndRawNumbers' passed (0.005 seconds)
+Test Case 'ProtocolTests.testUnknownFrameIsIgnoredWithoutLosingSequence' started at 2026-10-17 01:13:37.244
+Test Case 'ProtocolTests.testUnknownFrameIsIgnoredWithoutLosingSequence' passed (0.0 seconds)
+Test Suite 'ProtocolTests' passed at 2026-10-17 01:13:37.244
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.048 (0.048) seconds
+Test Suite 'Step4Tests' started at 2026-10-17 01:13:37.244
+Test Case 'Step4Tests.testAffordableAmountsAreExactBoundedAndExcludeSubMinimumOrders' started at 2026-10-17 01:13:37.244
+Test Case 'Step4Tests.testAffordableAmountsAreExactBoundedAndExcludeSubMinimumOrders' passed (0.0 seconds)
+Test Case 'Step4Tests.testChangingEnvironmentOutsideCopyKeepsTheSelectedTabConsistent' started at 2026-10-17 01:13:37.244
+Test Case 'Step4Tests.testChangingEnvironmentOutsideCopyKeepsTheSelectedTabConsistent' passed (0.001 seconds)
+Test Case 'Step4Tests.testContradictoryFillIsIgnoredButMatchingDurableOrderIsAccepted' started at 2026-10-17 01:13:37.245
+Test Case 'Step4Tests.testContradictoryFillIsIgnoredButMatchingDurableOrderIsAccepted' passed (0.144 seconds)
+Test Case 'Step4Tests.testCopyTabKeepsPaperEnvironmentAndDoesNotEnableTrading' started at 2026-10-17 01:13:37.389
+Test Case 'Step4Tests.testCopyTabKeepsPaperEnvironmentAndDoesNotEnableTrading' passed (0.022 seconds)
+Test Case 'Step4Tests.testDisconnectClearsPreviousProfileDataImmediately' started at 2026-10-17 01:13:37.411
+Test Case 'Step4Tests.testDisconnectClearsPreviousProfileDataImmediately' passed (0.02 seconds)
+Test Case 'Step4Tests.testGraduatingNeedsActualProgressAndDoesNotInventMissingData' started at 2026-10-17 01:13:37.431
+Test Case 'Step4Tests.testGraduatingNeedsActualProgressAndDoesNotInventMissingData' passed (0.01 seconds)
+Test Case 'Step4Tests.testLiveProfileRejectsAPaperServer' started at 2026-10-17 01:13:37.441
+Test Case 'Step4Tests.testLiveProfileRejectsAPaperServer' passed (0.018 seconds)
+Test Case 'Step4Tests.testPaperProfileRejectsALiveServerBeforeReadinessOrMutation' started at 2026-10-17 01:13:37.459
+Test Case 'Step4Tests.testPaperProfileRejectsALiveServerBeforeReadinessOrMutation' passed (0.021 seconds)
+Test Case 'Step4Tests.testProfilesKeepPaperAndLiveEndpointsSeparateWithoutCredentialsInPreferences' started at 2026-10-17 01:13:37.480
+Test Case 'Step4Tests.testProfilesKeepPaperAndLiveEndpointsSeparateWithoutCredentialsInPreferences' passed (0.101 seconds)
+Test Case 'Step4Tests.testSavingSameEndpointForBothModesIsRefusedBeforeChangingCredential' started at 2026-10-17 01:13:37.582
+Test Case 'Step4Tests.testSavingSameEndpointForBothModesIsRefusedBeforeChangingCredential' passed (0.001 seconds)
+Test Case 'Step4Tests.testStaleDisplayClockBlocksActionsWithoutResettingThePortfolio' started at 2026-10-17 01:13:37.583
+Test Case 'Step4Tests.testStaleDisplayClockBlocksActionsWithoutResettingThePortfolio' passed (0.02 seconds)
+Test Case 'Step4Tests.testWalletChangeInsideAConnectionBlocksFurtherCommands' started at 2026-10-17 01:13:37.603
+Test Case 'Step4Tests.testWalletChangeInsideAConnectionBlocksFurtherCommands' passed (0.037 seconds)
+Test Suite 'Step4Tests' passed at 2026-10-17 01:13:37.641
+	 Executed 12 tests, with 0 failures (0 unexpected) in 0.397 (0.397) seconds
+Test Suite 'debug.xctest' passed at 2026-10-17 01:13:37.641
+	 Executed 42 tests, with 1 test skipped and 0 failures (0 unexpected) in 0.737 (0.737) seconds
+Test Suite 'All tests' passed at 2026-10-17 01:13:37.641
+	 Executed 42 tests, with 1 test skipped and 0 failures (0 unexpected) in 0.737 (0.737) seconds
+Validated all 6 Swift-encoded command variants against the actual backend parser. No commands executed.
+[0/1] Planning build
+Building for production...
+[0/2] Write swift-version-5D65B911BCBD1F49.txt
+[1/2] Write sources
+[3/3] Compiling FomoBotCore Amounts.swift
+Build of target: 'FomoBotCore' complete! (10.10s)
+Shared Swift tests, actual controller HTTP, command codec and Release core checks passed. Review explicit test skips; Apple iOS SDK/device acceptance remains separate.
