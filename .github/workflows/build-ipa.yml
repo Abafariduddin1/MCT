@@ -1,0 +1,232 @@
+name: Build FomoBot IPA
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - "v*"
+  release:
+    types:
+      - published
+
+permissions:
+  contents: read
+
+jobs:
+  build-ipa:
+    name: Build Unsigned Release IPA (macOS)
+    runs-on: macos-15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Auto-locate ios folder and ensure project.yml exists
+        run: |
+          set -euo pipefail
+          if [ -f "ios/Package.swift" ]; then
+            PROJECT_ROOT="."
+          elif [ -f "fomo-bot/ios/Package.swift" ]; then
+            PROJECT_ROOT="fomo-bot"
+          elif [ -f "source/fomo-bot/ios/Package.swift" ]; then
+            PROJECT_ROOT="source/fomo-bot"
+          else
+            FOUND=$(find . -maxdepth 4 -path "*/ios/Package.swift" | head -n 1 || true)
+            if [ -z "${FOUND}" ]; then
+              echo "Error: Could not find ios/Package.swift in the repository. Please upload the ios folder." >&2
+              exit 1
+            fi
+            PROJECT_ROOT=$(dirname "$(dirname "${FOUND#./}")")
+          fi
+          echo "Located project root at: ${PROJECT_ROOT}"
+          echo "PROJECT_ROOT=${PROJECT_ROOT}" >> "$GITHUB_ENV"
+
+          # Refuse committed secrets
+          FORBIDDEN=$(find "${PROJECT_ROOT}" -type f \( -name ".env" -o -name "*.vault.json" -o -name "wallet*.json" -o -name "*.key" \) || true)
+          if [ -n "${FORBIDDEN}" ]; then
+            echo "Error: Private configuration or wallet files must never be committed:" >&2
+            echo "${FORBIDDEN}" >&2
+            exit 1
+          fi
+
+          # If project.yml was uploaded to repo root instead of PROJECT_ROOT, copy it over
+          if [ ! -f "${PROJECT_ROOT}/project.yml" ] && [ -f "project.yml" ]; then
+            cp "project.yml" "${PROJECT_ROOT}/project.yml"
+          fi
+
+          # If project.yml is still missing, generate it automatically
+          if [ ! -f "${PROJECT_ROOT}/project.yml" ]; then
+            cat << 'EOF' > "${PROJECT_ROOT}/project.yml"
+          name: FomoBot
+          options:
+            bundleIdPrefix: com.fomobot
+            deploymentTarget:
+              iOS: "18.0"
+            xcodeVersion: "16.0"
+            createIntermediateGroups: true
+            generateEmptyDirectories: false
+          packages:
+            FomoBotPackage:
+              path: ios
+          settings:
+            base:
+              SWIFT_VERSION: "6.0"
+              IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+              TARGETED_DEVICE_FAMILY: "1"
+              SUPPORTS_MACCATALYST: NO
+              SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+          targets:
+            FomoBot:
+              type: application
+              platform: iOS
+              deploymentTarget: "18.0"
+              sources:
+                - path: ios/App
+              dependencies:
+                - package: FomoBotPackage
+                  product: FomoBotCore
+                - package: FomoBotPackage
+                  product: FomoBotUI
+              info:
+                path: ios/Info.plist
+                properties:
+                  CFBundleDisplayName: FomoBot
+                  CFBundleName: $(PRODUCT_NAME)
+                  CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
+                  CFBundleInfoDictionaryVersion: "6.0"
+                  CFBundleExecutable: $(EXECUTABLE_NAME)
+                  CFBundlePackageType: $(PRODUCT_BUNDLE_PACKAGE_TYPE)
+                  CFBundleShortVersionString: $(MARKETING_VERSION)
+                  CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+                  LSRequiresIPhoneOS: true
+                  UIUserInterfaceStyle: Dark
+                  ITSAppUsesNonExemptEncryption: false
+                  UIApplicationSceneManifest:
+                    UIApplicationSupportsMultipleScenes: false
+                  UILaunchScreen: {}
+                  UISupportedInterfaceOrientations:
+                    - UIInterfaceOrientationPortrait
+                    - UIInterfaceOrientationPortraitUpsideDown
+                  NSAppTransportSecurity:
+                    NSAllowsLocalNetworking: true
+              settings:
+                base:
+                  PRODUCT_NAME: FomoBot
+                  PRODUCT_BUNDLE_IDENTIFIER: com.fomobot.controller
+                  MARKETING_VERSION: "0.4.0"
+                  CURRENT_PROJECT_VERSION: "1"
+                  GENERATE_INFOPLIST_FILE: NO
+                  INFOPLIST_FILE: ios/Info.plist
+                  ENABLE_PREVIEWS: NO
+                  CODE_SIGN_STYLE: Manual
+                  CODE_SIGN_IDENTITY: ""
+                  CODE_SIGNING_REQUIRED: NO
+                  CODE_SIGNING_ALLOWED: NO
+          schemes:
+            FomoBot:
+              build:
+                targets:
+                  FomoBot: all
+              archive:
+                config: Release
+          EOF
+          fi
+
+      - name: Select and record Xcode & iOS SDK toolchain
+        working-directory: ${{ env.PROJECT_ROOT }}
+        run: |
+          set -euo pipefail
+          mkdir -p build-logs
+          if [ -d "/Applications/Xcode_16.2.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer
+          elif [ -d "/Applications/Xcode_16.1.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer
+          elif [ -d "/Applications/Xcode_16.0.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_16.0.app/Contents/Developer
+          fi
+          {
+            echo "=== macOS Version ==="
+            sw_vers
+            echo "=== Selected Xcode ==="
+            xcode-select -p
+            xcodebuild -version
+            echo "=== Swift Toolchain ==="
+            swift --version
+            echo "=== iOS SDK ==="
+            xcrun --sdk iphoneos --show-sdk-path
+            xcrun --sdk iphoneos --show-sdk-version
+          } | tee build-logs/toolchain.txt
+
+      - name: Run Apple SDK syntax, type, and Swift package tests
+        working-directory: ${{ env.PROJECT_ROOT }}/ios
+        run: |
+          set -euo pipefail
+          sh Scripts/check-apple-syntax.sh | tee ../build-logs/apple-syntax.log
+          if [ -f "Scripts/check-apple-types.sh" ]; then
+            sh Scripts/check-apple-types.sh | tee ../build-logs/apple-types.log
+          fi
+          swift test -j 1 | tee ../build-logs/swift-tests.log
+
+      - name: Verify XcodeGen and generate Xcode project
+        working-directory: ${{ env.PROJECT_ROOT }}
+        run: |
+          set -euo pipefail
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          fi
+          xcodegen --version | tee -a build-logs/toolchain.txt
+          xcodegen generate --spec project.yml | tee build-logs/xcodegen.log
+
+      - name: Build Release device .app (Code Signing Disabled)
+        working-directory: ${{ env.PROJECT_ROOT }}
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project FomoBot.xcodeproj \
+            -scheme FomoBot \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES \
+            clean build | tee build-logs/xcodebuild.log
+
+      - name: Package Payload/FomoBot.app into FomoBot.ipa and record SHA-256
+        working-directory: ${{ env.PROJECT_ROOT }}
+        run: |
+          set -euo pipefail
+          APP_PATH="build/DerivedData/Build/Products/Release-iphoneos/FomoBot.app"
+          if [ ! -d "${APP_PATH}" ]; then
+            echo "Error: Expected compiled app bundle at ${APP_PATH}" >&2
+            exit 1
+          fi
+
+          rm -rf build/package
+          mkdir -p build/package/Payload
+          cp -R "${APP_PATH}" build/package/Payload/FomoBot.app
+
+          codesign --force --deep --sign - --timestamp=none build/package/Payload/FomoBot.app
+
+          (
+            cd build/package
+            ditto -c -k --sequesterRsrc --keepParent Payload FomoBot.ipa
+            shasum -a 256 FomoBot.ipa > SHA256SUMS.txt
+          )
+          cp build/package/FomoBot.ipa ./FomoBot.ipa
+          cp build/package/SHA256SUMS.txt ./SHA256SUMS.txt
+          cat ./SHA256SUMS.txt | tee build-logs/checksums.txt
+
+      - name: Upload FomoBot.ipa and build logs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: FomoBot-IPA
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            ${{ env.PROJECT_ROOT }}/FomoBot.ipa
+            ${{ env.PROJECT_ROOT }}/SHA256SUMS.txt
+            ${{ env.PROJECT_ROOT }}/build-logs/
