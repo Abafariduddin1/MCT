@@ -74,7 +74,7 @@ public struct ConnectionSetupView: View {
             } catch ConnectionSetupError.separateEndpointsRequired { error = "Use a different endpoint for Paper and Real trading."; saving = false }
             catch ModelError.invalidEndpoint { error = "Enter a trusted HTTPS endpoint without a query, password or extra path."; saving = false }
             catch ModelError.invalidToken { error = "Enter the controller token generated on your laptop."; saving = false }
-            catch { error = "The connection could not be saved securely. Check the token and try again."; saving = false }
+            catch { self.error = "The connection could not be saved securely. Check the token and try again."; saving = false }
         }
     }
 }
